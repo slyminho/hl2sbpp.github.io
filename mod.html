@@ -7,7 +7,7 @@
       content="Half Life 2: Sandbox++, HL2SB++, Half-Life, YourLocalMoon, Garry's Mod, GM, GMod, HL2, Mod">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link id="theme-style" rel="stylesheet" type="text/css" href="CSS/default.css">
     <title>Half-Life 2: Sandbox++ Manual: Addons</title>
   </head>
 
@@ -143,6 +143,26 @@
         </div>
       </div>
     </footer>
+    </script>
+    
+    <!-- Custom Themes-->
+    <script>
+  function setThemeByDate() {
+    const today = new Date();
+    const month = today.getMonth() + 1; 
+    const day = today.getDate();
 
+    const theme = document.getElementById("theme-style");
+
+       if (month === 12 && day >= 24 && day <= 26) {
+      theme.href = "CSS/christmas.css";
+}
+    else {
+      theme.href = "CSS/default.css";
+    }
+  }
+
+  setThemeByDate();
+</script>
   </body>
 </html>

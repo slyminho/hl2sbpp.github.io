@@ -7,7 +7,7 @@
       content="Half Life 2: Sandbox++, HL2SB++, Half-Life, Garry's Mod, GM, GMod, HL2, Mod">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link id="theme-style" rel="stylesheet" type="text/css" href="CSS/default.css">
     <title>Half-Life 2: Sandbox++ Tutorials</title>
   </head>
 
@@ -42,7 +42,7 @@
   <li>
     Install stable release archive and APK at
     <b>
-      <a href="https://github.com/hl2sbpp/hl2sbpp/releases">
+      <a class="link" href="https://github.com/hl2sbpp/hl2sbpp/releases">
         HL2:SB++ GitHub page.
       </a>
     </b>
@@ -63,7 +63,7 @@ Follow the steps below to install on PC:
   <li>
     Install stable release archive and PC binaries at
     <b>
-      <a href="https://github.com/hl2sbpp/hl2sbpp/releases">
+      <a class="link" href="https://github.com/hl2sbpp/hl2sbpp/releases">
         HL2:SB++ GitHub page.
       </a>
     </b>
@@ -119,7 +119,7 @@ Follow the steps below to install on PC:
         </p>
         <p>
           Now, you can press "OK" button to start the server or head over to the
-          <a href="index.html#serversettings"><b>server settings</b></a
+          <a class="link" href="index.html#serversettings"><b>server settings</b></a
           >.
         </p>
         <p id="serversettings">Now, click "Server Settings"</p>
@@ -234,7 +234,7 @@ Follow the steps below to install on PC:
 
         <h2>Required:</h2>  
         <ul>  
-          <li><a href="https://play.google.com/store/apps/details?id=com.zerotier.one"> ZeroTier One app</a></li>  
+          <li><a class="link" href="https://play.google.com/store/apps/details?id=com.zerotier.one"> ZeroTier One app</a></li>  
           <li>A decent phone (if the host device is weak, the server may lag)</li>  
           <li>HL2SBPP (recommended over Universal Source Patch)</li>  
         </ul>  
@@ -323,5 +323,26 @@ Follow the steps below to install on PC:
             }
         }
     </script>
+    
+    <!-- Custom Themes-->
+    <script>
+  function setThemeByDate() {
+    const today = new Date();
+    const month = today.getMonth() + 1; 
+    const day = today.getDate();
+
+    const theme = document.getElementById("theme-style");
+
+       if (month === 12 && day >= 24 && day <= 26) {
+      theme.href = "CSS/christmas.css";
+}
+    else {
+      theme.href = "CSS/default.css";
+    }
+  }
+
+  setThemeByDate();
+</script>
+
   </body>
 </html>
