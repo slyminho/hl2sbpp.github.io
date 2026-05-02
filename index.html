@@ -1,43 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <meta
       name="Keywords"
-      content="Half Life 2: Sandbox++, HL2SB++, Half-Life, Garry's Mod, GM, GMod, HL2, Mod"
-    />
-    <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+      content="Half Life 2: Sandbox++, HL2SB++, Half-Life, Garry's Mod, GM, GMod, HL2, Mod">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
     <title>Half-Life 2: Sandbox++ Manual</title>
   </head>
 
   <body>
     <div class="topnav">
-      <a href="#"><img src="images/hl2sbpp.png" id="thing" /></a>
-      <a class="active" href="#">Getting Started</a>
-      <a href="config.html">Configuration</a>
-      <a href="mod.html">Addons</a>
-      <a href="dev.html">Credits</a>
+      <div class="logo">
+        <img src="images/hl2sbpp.png">
+      </div>
+
+      <div class="nav-links">
+        <a class="active">Getting Started</a>
+        <a href="tutorials.html">Tutorials</a>
+        <a href="config.html">Configuration</a>
+        <a href="mod.html">Addons</a>
+        <a href="dev.html">Credits</a>
+      </div>
     </div>
 
-    <div style="padding-left: 16px">
+    <div class="main-content" style="padding-left: 16px">
       <a id="whatis">
         <h1 class="title">What is Half-Life 2: Sandbox++?</h1>
         <p>
           Half-Life 2: Sandbox++ (HL2:SB++) is a remake of Half-Life 2: Sandbox,
           available for Android, Linux and Windows computers, using a
-          <a href="https://github.com/nillerusr/source-engine"
-            ><b>modified Source Engine by nillerusr. </b></a
-          >
+          <a href="https://github.com/nillerusr/source-engine">
+            <b>modified Source Engine by nillerusr.</b>
+          </a>
         </p>
-        <p>Lua Modding is supported, meaning you can create cool mods, just like in Garry's Mod.</p>
         <p>
-          SB++ also offers many addons made by the developers and the community.
-          You can get addons for Half-Life 2: Sandbox++ on
-          <a href="https://discord.gg/3DkET6fqXr"><b>their Discord Server</b></a
-          >.
+          Lua Modding is supported, meaning you can create cool mods, just like
+          in Garry's Mod.
         </p>
       </a>
+
       <a id="features">
         <h1 class="subtitle">Features</h1>
         <p>
@@ -50,121 +54,52 @@
           <li>Moddable game.</li>
         </ul>
       </a>
-      <a id="installation">
-        <h1 class="subtitle">Installing</h1>
-        <p>To install Half-Life 2: Sandbox++, you should follow these steps:</p>
+
+      <a id="community">
+        <h1 class="subtitle">Community</h1>
+        <p>
+          Half-Life 2: Sandbox++ has a highly active and dedicated community
+          that is always:
+        </p>
         <ul>
-          <li>
-            Install stable release archive and APK at
-            <b
-              ><a href="https://github.com/hl2sbpp/hl2sbpp/releases"
-                >HL2:SB++ GitHub page.</a
-              ></b
-            >
-          </li>
-          <li>
-            Put the folder from hl2sbpp.zip archive to your srceng folder and
-            install hl2sbpp APK.
-          </li>
-          <li>
-            If folder name is "hl2sbpp-dev", then rename the folder to
-            "hl2sbpp".
-          </li>
+          <li>Helping new players get started</li>
+          <li>Playing together</li>
+          <li>Creating and porting new addons</li>
+          <li>Discussing ideas, updates, and improvements</li>
         </ul>
         <p>
+          You can join the community by entering their
+          <a href="https://discord.gg/3DkET6fqXr">
+            <b>Discord Server.</b>
+          </a>
+        </p>
+      </a>
+      <a id="compatibility">
+        <h1 class="subtitle">Compatibility</h1>
+        <p>
+        Half-Life 2: Sandbox++ is highly compatible with a wide range of devices and systems, 
+      and can even run on low-end devices (with reduced graphics + the videoconfig patch).
+           </p>
+           <p>
           Half-Life 2: Sandbox++ also includes Linux, Windows and MacOS versions of the
-          game.<br />That means you can play Half-Life 2: Sandbox++ on
-          Linux/Windows/MacOS computers along with Android devices. Here's the
-          installation tutorial for Linux and Windows computers:
+          game.<br>That means you can play Half-Life 2: Sandbox++ on
+          Linux/Windows/MacOS computers along with Android devices.
         </p>
-        <ul id="installation-pc">
-          <li>
-            Install stable release archive and PC binaries at
-            <b
-              ><a href="https://github.com/hl2sbpp/hl2sbpp/releases"
-                >HL2:SB++ GitHub page.</a
-              ></b
-            >
-          </li>
-          <li>
-            Put the folder from hl2sbpp.zip and PC Binaries.zip archives to your
-            srceng folder.
-          </li>
-          <li>
-            If folder name is "hl2sbpp-dev", then rename the folder to
-            "hl2sbpp".
-          </li>
-          <li>Start the game from hl2sbpp_launcher.exe.</li>
-        </ul>
-      </a>
-      <a id="server">
-        <h2 class="subtitle">Creating your server</h2>
-        <p>
-          After you will install Half-Life 2: Sandbox++, you wanna create your
-          first server.
-        </p>
-        <p>
-          Press "Create server" button. You will see a little collection of the
-          maps.
-        </p>
-        <img src="images/maps.jpg" id="new-img" width="50%" height="50%" />
-        <p>
-          You can click the image of the maps to select the one you have
-          clicked.
-        </p>
-        <p>
-          Or you can click "Game maps" button to see a list of singleplayer
-          Half-Life 2 maps, Counter-Strike: Source maps and etc...
-        </p>
-        <img src="images/gamesmaps.jpg" id="new-img" width="50%" height="50%" />
-        <p>
-          Like with maps section, you can click the image of the maps to select
-          the one you have clicked.
-        </p>
-        <p>
-          Now, you can press "OK" button to start the server or head over to the
-          <a href="index.html#serversettings"><b>server settings</b></a
-          >.
-        </p>
-        <p id="serversettings">Now, click "Server Settings"</p>
-        <p>
-          There you can configure server name, max count of players, password
-          and gamemode.
-        </p>
-        <img src="images/settings.jpg" id="new-img" width="50%" height="50%" />
-        <p>
-          <img id="note" src="images/note.png" width="20px" /> If you're up to
-          playing with your friend, you should set maxplayers count from one to 32.
-          Friend will not be able to join if maxplayers count is 1.
-        </p>
-        <p>
-          You can set server hostname, maximum player count, password (if
-          needed) and gamemode.<br />There are several gamemodes:
-        </p>
-        <ul>
-          <li>
-            Default: Sandbox gamemode. You will spawn with HL2 Weapons, toolgun
-            and physgun.
-          </li>
-          <li>Sandbox: Same as default gamemode.</li>
-          <li>
-            Campaign: Co-op gamemode. Play HL2 or other singleplayer maps with
-            your friends or alone.
-          </li>
-          <li>
-            Melon Drive: You will spawn as a melon. You can't do anything but
-            only move as a melon.
-          </li>
-          <li>
-            Deathmatch: Deathmatch gamemode from Half-Life 2: Deathmatch.
-            Half-Life 2: Sandbox++ things are disabled here.
-          </li>
-        </ul>
-        <p>
-          When you will finish configuring the server settings, you can press "OK"
-          button in the bottom left corner to start the game.
-        </p>
-      </a>
     </div>
+
+    <footer>
+      <div class="footer-content">
+        <p>© 2026 Half-Life 2: Sandbox++</p>
+        <p>By Team HL2SB++</p>
+        <div class="footer-links">
+          <a class="active" href="">Getting Started</a>
+          <a href="tutorials.html">Tutorials</a>
+          <a href="config.html">Configurations</a>
+          <a href="mod.html">Addons</a>
+          <a href="dev.html">Credits</a>
+        </div>
+      </div>
+    </footer>
+    </script>
   </body>
 </html>
